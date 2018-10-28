@@ -1,0 +1,46 @@
+.container-wrapper {
+	display: grid;
+	grid-gap: 4px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows:auto;
+
+}
+.menu {
+	padding:30px;
+	border:1px dashed #2d2d2d;
+	grid-column : 1 / -1;
+	
+}
+.header{
+	padding:20px;
+	border:1px dashed #2d2d2d;
+	grid-column: 1 / -1;
+
+}
+.sidebar {
+	border:1px dashed #2d2d2d;
+	grid-column :  1 / 2;
+	background-image: url(../image/foto.png);
+	background-size: cover;
+
+}
+.konten {
+	grid-column : 2 / -1;
+	border:1px dashed #2d2d2d;
+	display: grid;
+	background-color: #2d2d2d;
+	grid-gap: 4px;
+}
+.footer{
+	border:1px dashed #2d2d2d;
+	;
+	padding:20px;
+	grid-column : 1 / -1;
+	
+}
+.subkonten {
+	padding:30px;
+	color:#fff;
+	grid-column: 1 / -1;
+}
+

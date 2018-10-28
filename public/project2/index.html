@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> ADD </title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="../css/mygrid.css">
+</head>
+<body>
+	<div class="container-wrapper">
+		<div class="menu"> 
+			<a href="../index.html"><img src="../image/logo.png" width="250px" alt="logo"></a>
+		</div>			
+		</div>
+		<div class="konten">
+			<div class="form-inline">
+				<input type="number" class="form-control ml-5" placeholder="angka 1" name="angka1">
+				<span style="font-size: 50px"> + </span>
+				<input type="number" class="form-control" placeholder="angka 2" name="angka2">
+				<input type="submit" class="btn btn-outline-danger ml-2 hitung" name="hitung" value="hitung">
+				<input type="number" name="result" class="form-control ml-2" placeholder="hasil" readonly>
+				</div>
+		</div>
+		<div class="footer">
+			<p> Muhammad arham - 2018 / mws-makasar / twitter:@arhamymr,ig:@arhamymr, codepen: codepen.io/arhamymr </p>
+		</div>
+
+
+		<script type="text/javascript">
+			
+			function kalkulator(){
+				let angka = document.querySelectorAll('input')
+				let angka1 = angka[0].value;//angka pertama
+				let angka2 = angka[1].value;//angka kedua
+				angka[3].value = parseInt(angka1) + parseInt(angka2);
+				console.log(angka[3].value)
+			}
+			let tombol = document.querySelector('.hitung');
+			tombol.addEventListener('click',kalkulator);
+		</script>
+	</div>
+</body>
+</html>

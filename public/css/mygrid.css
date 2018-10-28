@@ -1,0 +1,81 @@
+.container-wrapper {
+	display: grid;
+	grid-gap: 4px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows:auto;
+
+}
+.menu {
+	padding:30px;
+	border:1px dashed #2d2d2d;
+	grid-column : 1 / -1;
+	
+}
+.header{
+	padding:20px;
+	border:1px dashed #2d2d2d;
+	grid-column: 1 / -1;
+
+}
+.sidebar {
+	border:1px dashed #2d2d2d;
+	grid-column :  1 / 2;
+	background-image: url(../image/foto.png);
+	background-size: cover;
+
+}
+.konten {
+	grid-column : 2 / -1;
+	border:1px dashed #2d2d2d;
+	display: grid;
+	background-color: #2d2d2d;
+	grid-gap: 4px;
+	color:#fff;
+}
+.footer{
+	border:1px dashed #2d2d2d;
+	;
+	padding:20px;
+	grid-column : 1 / -1;
+	
+}
+.subkonten {
+	padding:30px;
+	color:#fff;
+	grid-column: 1 / -1;
+}
+
+/*leaflet Mapbox below */
+
+.konten-map {
+	display: grid;
+	height: 100%;
+	grid-gap:4px;
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: 2fr 1fr;
+
+}
+
+.peta {
+	grid-column: 1 / -1;
+	grid-row: 1 / 2;
+	height: 400px;
+	background-color: #2d2d2d;
+}
+
+.gambar {
+	background-color: #2d2d2d;
+	grid-column: 1 / 5;
+	grid-row: 2 / -1;
+	color:#fff;
+}
+.review {
+	background-color: #000000;
+	grid-column: 5 / -1;
+	grid-row: 2 / -1;
+	color:#fff;
+}
+
+#mapid {
+	height: 400px;
+}
